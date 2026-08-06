@@ -43,3 +43,20 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+//See More buttons for comments on awards
+function seeMore(elem) {
+  //get only number from button Id
+  var btnNum = elem.id.replace(/^\D+/g, '');
+  //get comment
+  var comment = document.getElementById("awardComment"+btnNum);
+  //show more/less
+  if (getComputedStyle(comment).display === "none") {
+    comment.style.display = "inline";
+    elem.innerHTML = "See less";
+  }
+  else {
+    comment.style.display = "none";
+    elem.innerHTML = "See comment from awards committee";
+  };
+}
