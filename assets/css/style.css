@@ -294,7 +294,7 @@ article.active {
   border: none;
   text-decoration: underline;
   cursor: pointer;
-  transition-duration: 0.4s;
+  transition-duration: var(--transition);
 }
 
 .award-button:hover{
@@ -302,6 +302,20 @@ article.active {
 }
 
 /* TIMELINE (Resume) */
+.resume-link{
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--accent);
+  opacity: 0.6;
+  transition: var(--transition);
+}
+
+.resume-link:hover{
+  opacity: 1;
+}
+
 .timeline-list {
   border-left: 2px solid var(--border-color);
   padding-left: 20px;
@@ -416,6 +430,20 @@ article.active {
 }
 
 .project-card:hover .project-card-action {
+  opacity: 1;
+}
+
+/* HOCKEY */
+.inline-link{
+  color: var(--accent);
+  opacity: 0.6;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: var(--transition);
+
+}
+
+.inline-link:hover{
   opacity: 1;
 }
 
